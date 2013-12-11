@@ -1,0 +1,313 @@
+/*global*/
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #2e2d2d;
+	background: lightgrey url('img/bg-texture.png') repeat;
+}
+
+a {
+	color: #ff5300;
+	text-decoration: none;
+}
+
+img, object {
+	max-width: 100%;
+}
+
+
+/*typography*/
+
+h1 {
+	font-size: 2.850em;
+	font-weight: 100;
+	letter-spacing: -1.5px;
+	color: #ff5300;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 1.500em;
+	color: #00ab6f;
+}
+h3 {
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #00ab6f;
+}
+
+/*buttons*/
+
+.btn {
+	padding: 15px 30px;
+	color: #faf3bc;
+	background-color: #00ab6f;
+	/*background: #00ab6f url('img/texture.png') no-repeat right top;*/
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background-color: #4cc4a7;
+}
+
+
+.btn-small {
+	padding: 10px 25px;
+	color: #faf3bc;
+	font-size: .75em;
+	background-color: #b22316;
+	/*background: #b22316 url('texture.png') no-repeat right bottom;*/
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+.btn-small:hover {
+	background-color: #c62718;
+}
+
+.cta_btn {
+	width: 240px;
+	height: 80px;
+	background-color: #00ab6f;
+	border-radius: 10px;
+	box-shadow: 0px 4px 0px #01925f;
+	margin-left: 6%;
+}
+.cta_btn > p  > a{
+	color: white;
+	display: block;
+	padding: 24px;
+}
+.cta_btn > p {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+
+#logo > img.margin-top {
+	margin-top: 5%;
+}
+
+/*navigation*/
+
+#nav ul {
+	width: 100%;
+	margin: 17% -16% 5% 0;
+	list-style: none;
+	float: right;
+	}
+#nav ul li {
+	float: left;
+	font-size: 1.15em;
+	}
+	
+	#nav ul li.home > a,
+	#nav ul li.services > a,
+	#nav ul li.about > a,
+	#nav ul li.contact > a
+	{
+		color: white;
+		padding: 4px;
+	}
+	
+	#nav ul li.home > a {
+		background-color: #ff5300;
+	}
+	#nav ul li.services > a {
+		background-color: #ff7e40;
+	}
+	#nav ul li.about > a {
+		background-color: #ffa073;
+	}
+	#nav ul li.contact > a {
+		background-color: #00ab6f;
+	}
+	#nav ul li.home,
+	#nav ul li.services,
+	#nav ul li.about,
+	#nav ul li.contact
+	{
+		width: 19%;
+		margin-left: 2%;
+	}
+
+#nav ul li a {
+	color: #ff5300;
+	display: block;
+	text-decoration: none;
+	}
+
+/*content*/
+
+#intro, #intro-img {
+	margin: 5% 0 5% 0;
+}
+
+#intro > h1 {
+	margin-top: -1%;
+}
+
+#new-cupcakes img {
+	box-sizing: border-box;
+	background-color: #faf3bc;
+	padding: 8px;
+	margin: 0 0 5% 0;
+}
+
+#featured-cupcake img {
+	box-sizing: border-box;
+	background-color: #faf3bc;
+	padding: 8px;
+	margin: 0 0 5% 0;
+}
+
+#contact span{
+	color: #b22316;
+	font-weight: 600;
+}
+
+#copyright {
+	border-top: 8px solid #ff7e40;
+	padding: 2% 0;
+	margin: 2% 0;
+	text-align: center;
+}
+
+/*media queries*/
+
+/* Larger ----------- */
+@media screen and (max-width: 1024px) {
+
+
+#intro {
+	width: 60%; 
+}
+#intro-img {
+	
+}
+#intro h1 {
+	/*margin:  0 0 5% 0;*/
+	font-size: 2em;
+}
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#logo object {
+	max-width:  55%;
+}
+
+
+#logo > img.margin-top {
+	margin-top: 2%;
+}
+
+.cta_btn {
+	margin-top: -14%;
+}
+
+#nav {
+	width: 100%;
+}
+#nav ul {
+	margin: 0;
+	margin-top: 2%;
+}
+	
+#nav ul li.home,
+#nav ul li.services,
+#nav ul li.about,
+#nav ul li.contact
+	{
+		width: 23%;
+		margin-left: 2%;
+	}
+
+	#nav ul li.home > a,
+	#nav ul li.services > a,
+	#nav ul li.about > a,
+	#nav ul li.contact > a
+	{
+		padding: 12px;
+	}
+
+}
+
+
+
+
+
+
+/* Smaller ----------- */
+@media screen and (max-width : 650px) {
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	width:100%;
+}
+#logo object {
+	max-width: 60%;
+}
+#logo > img.margin-top {
+	margin-top: 5%;
+}
+#nav ul {
+	margin: 0;
+}
+
+#nav ul li a {
+	-webkit-user-select: none;
+	font-size: 0.9em;
+}
+
+#nav ul li {
+	float: left;
+	margin: 5% 0;
+	}
+	
+	#nav ul li.home,
+	#nav ul li.services,
+	#nav ul li.about,
+	#nav ul li.contact
+	{
+		width: 40%;
+		margin-left: 5%;
+		text-align: center;
+	}
+	
+
+	#nav ul li.home > a,
+	#nav ul li.services > a,
+	#nav ul li.about > a,
+	#nav ul li.contact > a
+	{
+		padding: 16px;
+	}
+
+#intro-img , #intro, #about {
+	display: none;
+}
+#featured-cupcake, #new-cupcakes {
+	margin: 5% 0;
+}
+
+}
+
